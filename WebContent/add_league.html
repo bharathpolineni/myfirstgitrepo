@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Leagues</title>
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<!--  <script src="validateForm.js"></script> -->
+<!-- action="/action_page.php" onsubmit="return validateForm()" -->
+<script type="text/javascript" src="./javascript/app.js"></script>
+</head>
+<body>
+<form name="myForm" action="add_league.do" method="post">
+Year:<input type="text" name="year" placeholder="enter league year" /><br>
+Season:<select name="season">
+<option value="UNKNOWN">select</option>
+<option value="social">social</option>
+<option value="application">application</option>
+<option value="social application">social application</option>
+</select><br>
+Title:<input type="text" name="title" placeholder="enter title here" /><br>
+<input type="submit" value="Add League" onclick="return validateForm()"/>
+</form>
+</body>
+</html>
